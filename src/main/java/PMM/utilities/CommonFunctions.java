@@ -235,10 +235,10 @@ public class CommonFunctions extends TestBase {
         JavascriptExecutor js = (JavascriptExecutor) getWebDriver();
         double loadTime2 = (Double) js.executeScript(
                 "return (window.performance.timing.loadEventEnd - window.performance.timing.navigationStart) / 1000");
-        System.out.println("Navigation Start " + loadTime2 + " seconds"); // 5.15 seconds
+        System.out.println("Navigation Start " + loadTime2 + " seconds");
         double loadTime1 = (Double) js.executeScript(
                 "return (window.performance.timing.loadEventEnd - window.performance.timing.responseEnd) / 1000");
-        System.out.println("Response End " + loadTime1 + " seconds"); // 5.15 seconds
+        System.out.println("Response End " + loadTime1 + " seconds");
 
 
 

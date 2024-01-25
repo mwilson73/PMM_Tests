@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c637b34a-445b-4f63-9a57-9decba544c75" name="Changes" comment="1st Push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/sitePages/re/pages/REHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/re/pages/REHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/sitePages/re/pages/USBankHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/re/pages/USBankHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/sitePages/usBank/pages/PMMHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/PMMHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/utilities/CommonFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/utilities/CommonFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PMM/tests/PMMPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PMM/tests/PMMPerformanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706038423925</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1st Push">
+      <created>1706039298852</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706039298852</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1st Push">
+      <created>1706039471094</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706039471094</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

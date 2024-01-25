@@ -22,7 +22,7 @@ public class REHomePage extends TestBase {
 
     public void clickUSBankLink() {
         if (USBankLinkDEMO.isDisplayed()) {functions.clickWithoutWaitTime(USBankLinkDEMO);
-            functions.PageLoadTime();
+            //functions.PageLoadTime();
         }
         else {
             getWebDriver().quit();

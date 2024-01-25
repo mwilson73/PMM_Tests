@@ -44,7 +44,14 @@ public class USBankHomePage extends TestBase {
         }
     }
     public void clickPMMLink(){
+        String currentPageHandle = getWebDriver().getWindowHandle();
         functions.click(pmmLink);
+        for (String handle : getWebDriver().getWindowHandles()) {
+            if (!handle.equals(currentPageHandle)) {
+                getWebDriver().switchTo().window(handle);
+            }
+            functions.PageLoadTime();
+        }
 
     }
 
