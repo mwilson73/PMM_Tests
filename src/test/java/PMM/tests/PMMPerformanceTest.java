@@ -27,6 +27,7 @@ public class PMMPerformanceTest extends TestBase {
         reHomePage = new REHomePage();
         usBankHomePage = new USBankHomePage();
         pmmHomePage = new PMMHomePage();
+        //test
     }
     @Test
     public void login() throws Throwable {
