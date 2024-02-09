@@ -239,6 +239,14 @@ public class CommonFunctions extends TestBase {
         double loadTime1 = (Double) js.executeScript(
                 "return (window.performance.timing.loadEventEnd - window.performance.timing.responseEnd) / 1000");
         System.out.println("Response End " + loadTime1 + " seconds");
+    }
+    public void PageLoadTime2(WebElement element) {
+        long start = System.currentTimeMillis();
+        waitUntilElementIsVisible(element);
+        long finish = System.currentTimeMillis();
+        long totalTime = finish - start;
+        System.out.println("Total Time for page load - "+totalTime);
+
 
 
 

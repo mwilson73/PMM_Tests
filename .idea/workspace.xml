@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c637b34a-445b-4f63-9a57-9decba544c75" name="Changes" comment="2nd Push">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/ProjectsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/PMMHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/PMMHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/sitePages/re/pages/USBankHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/re/pages/USBankHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/utilities/CommonFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/utilities/CommonFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PMM/tests/PMMPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PMM/tests/PMMPerformanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Selenium Projects/PMM_Tests",
+    "last_opened_file_path": "C:/Selenium Projects/RE_2_DEMO_SmokeTests",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
@@ -118,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707341635349</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2nd Push">
+      <created>1707341675763</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707341675763</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

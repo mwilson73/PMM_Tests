@@ -3,6 +3,7 @@ package PMM.tests;
 import PMM.baseClass.TestBase;
 import PMM.loginPage.LoginPage;
 import PMM.sitePages.pmm.pages.PMMHomePage;
+import PMM.sitePages.pmm.pages.ProjectsPage;
 import PMM.sitePages.re.pages.REHomePage;
 import PMM.sitePages.re.pages.USBankHomePage;
 import PMM.utilities.PasswordEncryptor;
@@ -18,6 +19,7 @@ public class PMMPerformanceTest extends TestBase {
     USBankHomePage usBankHomePage;
     PasswordEncryptor encryptor;
     PMMHomePage pmmHomePage;
+    ProjectsPage projectsPage;
 
     @BeforeClass
     public void beforeClass() throws IOException {
@@ -27,7 +29,8 @@ public class PMMPerformanceTest extends TestBase {
         reHomePage = new REHomePage();
         usBankHomePage = new USBankHomePage();
         pmmHomePage = new PMMHomePage();
-        //test
+        projectsPage = new ProjectsPage();
+
     }
     @Test
     public void login() throws Throwable {
@@ -44,6 +47,15 @@ public class PMMPerformanceTest extends TestBase {
     public void navigateToPMMSite() throws Exception {
         usBankHomePage.clickPMMLink();
         pmmHomePage.assertSitePMMHomePage("https://profilemanager.relrelease-element.com/app/main/home-cu");
+    }
+    @Test(dependsOnMethods = "navigateToPMMSite")
+    public void verifyProjectsTab() throws Exception {
+        pmmHomePage.navigateToProjects();
+        System.out.println("This is the time to load the Active Projects:");
+        projectsPage.activeProjectsLoading();
+        System.out.println("This is the time to load the Completed Projects:");
+        projectsPage.completedProjects();
+
 
 
 

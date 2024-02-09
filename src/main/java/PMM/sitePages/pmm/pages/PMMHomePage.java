@@ -18,6 +18,10 @@ public class PMMHomePage extends TestBase {
 
     @FindBy(xpath = "//span[normalize-space()='CU Dashboard']")
     WebElement pageMessageTextArea;
+    @FindBy(xpath = "//span[contains(text(),'Projects')]")
+    WebElement projectsLink;
+
+
 
 
 
@@ -29,8 +33,13 @@ public class PMMHomePage extends TestBase {
     }
 
     public void assertSitePMMHomePage(String siteURL) throws Exception {
+        functions.PageLoadTime2(projectsLink);
         functions.waitUntilElementIsVisible(pageMessageTextArea);
         functions.verifySiteURL(siteURL);
+
+    }
+    public void navigateToProjects() {
+        functions.click(projectsLink);
 
     }
 

@@ -23,6 +23,8 @@ public class USBankHomePage extends TestBase {
     public List<WebElement> accessList;
     @FindBy(xpath = "//a[normalize-space()='Profile Manager']")
     WebElement pmmLink;
+    @FindBy(xpath = "//span[contains(text(),'Projects')]")
+    WebElement projectsLink;
 
 
 
@@ -50,7 +52,7 @@ public class USBankHomePage extends TestBase {
             if (!handle.equals(currentPageHandle)) {
                 getWebDriver().switchTo().window(handle);
             }
-            functions.PageLoadTime();
+
         }
 
     }
