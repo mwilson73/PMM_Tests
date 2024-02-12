@@ -7,7 +7,6 @@ import PMM.sitePages.pmm.pages.ProjectsPage;
 import PMM.sitePages.re.pages.REHomePage;
 import PMM.sitePages.re.pages.USBankHomePage;
 import PMM.utilities.PasswordEncryptor;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
