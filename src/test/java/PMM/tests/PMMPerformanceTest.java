@@ -4,6 +4,7 @@ import PMM.baseClass.TestBase;
 import PMM.loginPage.LoginPage;
 import PMM.sitePages.pmm.pages.PMMHomePage;
 import PMM.sitePages.pmm.pages.ProjectsPage;
+import PMM.sitePages.pmm.pages.SurveysPage;
 import PMM.sitePages.re.pages.REHomePage;
 import PMM.sitePages.re.pages.USBankHomePage;
 import PMM.utilities.PasswordEncryptor;
@@ -19,6 +20,7 @@ public class PMMPerformanceTest extends TestBase {
     PasswordEncryptor encryptor;
     PMMHomePage pmmHomePage;
     ProjectsPage projectsPage;
+    SurveysPage surveysPage;
 
     @BeforeClass
     public void beforeClass() throws IOException {
@@ -29,6 +31,7 @@ public class PMMPerformanceTest extends TestBase {
         usBankHomePage = new USBankHomePage();
         pmmHomePage = new PMMHomePage();
         projectsPage = new ProjectsPage();
+        surveysPage = new SurveysPage();
 
     }
     @Test
@@ -54,9 +57,14 @@ public class PMMPerformanceTest extends TestBase {
         projectsPage.activeProjectsLoading();
         System.out.println("This is the time to load the Completed Projects:");
         projectsPage.completedProjects();
+    }
 
-
-
+    @Test(dependsOnMethods = "verifyProjectsTab")
+    public void verifySurveysTab() throws Exception {
+        pmmHomePage.navigateToSurveys();
+        System.out.println("This is the time to load Surveys:");
+        surveysPage.surveysLoading();
 
     }
+
 }

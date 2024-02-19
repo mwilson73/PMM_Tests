@@ -20,7 +20,8 @@ public class PMMHomePage extends TestBase {
     WebElement pageMessageTextArea;
     @FindBy(xpath = "//span[contains(text(),'Projects')]")
     WebElement projectsLink;
-
+    @FindBy(xpath = "//span[contains(text(),'Surveys')]")
+    WebElement surveysLink;
 
 
 
@@ -40,6 +41,11 @@ public class PMMHomePage extends TestBase {
     }
     public void navigateToProjects() {
         functions.click(projectsLink);
+
+    }
+
+    public void navigateToSurveys() {
+        functions.click(surveysLink);
 
     }
 
