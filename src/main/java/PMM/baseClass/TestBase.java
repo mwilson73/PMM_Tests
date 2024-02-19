@@ -87,6 +87,7 @@ public class TestBase {
                 Map<String, Object> chromePrefs = new HashMap<>();
                 chromePrefs.put("download.default_directory", System.getProperty("user.dir") + "\\downloads\\");
                 ChromeOptions options = new ChromeOptions();
+                WebDriverManager.chromedriver().clearDriverCache();
                 options.addArguments("--remote-allow-origins=*");
                 options.setExperimentalOption("prefs", chromePrefs);
                 WebDriverManager.chromedriver().setup();
