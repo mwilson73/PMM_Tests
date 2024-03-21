@@ -33,11 +33,11 @@ public class TestBase {
 
     protected static final String CURRENT_DIR = System.getProperty("user.dir");
 
-    @AfterClass
+/*    @AfterClass
     public void afterClass() {
         getWebDriver().close();
         getWebDriver().quit();
-    }
+    }*/
 
 
 
@@ -87,10 +87,10 @@ public class TestBase {
                 Map<String, Object> chromePrefs = new HashMap<>();
                 chromePrefs.put("download.default_directory", System.getProperty("user.dir") + "\\downloads\\");
                 ChromeOptions options = new ChromeOptions();
-                WebDriverManager.chromedriver().clearDriverCache();
+                //WebDriverManager.chromedriver().clearDriverCache();
                 options.addArguments("--remote-allow-origins=*");
                 options.setExperimentalOption("prefs", chromePrefs);
-                WebDriverManager.chromedriver().setup();
+                //WebDriverManager.chromedriver().setup();
                 setWebDriver(new ChromeDriver(options));
                 getWebDriver();
                 break;
@@ -107,7 +107,7 @@ public class TestBase {
                 options1.setCapability("ms:edgeChrominum", true);
                 options1.setCapability("ms:edgeOptions", edgeOptions);
 
-                WebDriverManager.edgedriver().setup();
+                //WebDriverManager.edgedriver().setup();
                 setWebDriver(new EdgeDriver(options1));
                 getWebDriver();
                 break;
@@ -124,6 +124,61 @@ public class TestBase {
         String url = System.getProperty("url");
         if (url == null)
             url = prop.getProperty("url");
+        getWebDriver().get(url);
+        implicitWait();
+
+    }
+    public void initialization2() throws IOException {
+        FileUtils.deleteDirectory(new File("C:\\Selenium Projects\\RE_2_DEMO_SmokeTests\\test-output"));
+//		Use this to point to the properties file for the browser value
+//		String browserName = prop.getProperty("browser");
+        String browserName = System.getProperty("browser");
+        if (browserName == null)
+            browserName = prop.getProperty("browser");
+        String driverPath = System.getProperty("user.dir") + prop.getProperty("drivers_location");
+        switch (browserName) {
+            case "chrome":
+                // Added to download the files into project directory
+                Map<String, Object> chromePrefs = new HashMap<>();
+                chromePrefs.put("download.default_directory", System.getProperty("user.dir") + "\\downloads\\");
+                ChromeOptions options = new ChromeOptions();
+                //WebDriverManager.chromedriver().clearDriverCache();
+                options.addArguments("--remote-allow-origins=*");
+                options.setExperimentalOption("prefs", chromePrefs);
+                //WebDriverManager.chromedriver().setup();
+                setWebDriver(new ChromeDriver(options));
+                getWebDriver();
+                break;
+
+            case "edge":
+                EdgeOptions options1 = new EdgeOptions();
+                //options1.addArguments("--remote-allow-origins=*");
+                Map<String, Object> prefs = new HashMap<>();
+                prefs.put("download.default_directory", CURRENT_DIR + "\\downloads\\");
+                prefs.put("download.prompt_for_download", false);
+                Map<String, Object> edgeOptions = new HashMap<>();
+                edgeOptions.put("prefs", prefs);
+                edgeOptions.put("useAutomationExtension", false);
+                options1.setCapability("ms:edgeChrominum", true);
+                options1.setCapability("ms:edgeOptions", edgeOptions);
+
+                //WebDriverManager.edgedriver().setup();
+                setWebDriver(new EdgeDriver(options1));
+                getWebDriver();
+                break;
+            default:
+                System.out.println("Please enter valid browser name in properties file");
+                break;
+        }
+
+        implicitWait();
+        maximizeWindow();
+
+        //Use this to get the URL value from the properties file
+        //getWebDriver().get(prop.getProperty("url"));
+        String url = System.getProperty("url2");
+        if (url == null)
+            url = prop.getProperty("url2");
         getWebDriver().get(url);
         implicitWait();
 

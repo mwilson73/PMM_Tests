@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c637b34a-445b-4f63-9a57-9decba544c75" name="Changes" comment="Added performance results for Surveys page">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/SurveysPage.java" afterDir="false" />
+    <list default="true" id="c637b34a-445b-4f63-9a57-9decba544c75" name="Changes" comment="Added performance results for Projects page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/PMMLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/UploadImagesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PMM/utilities/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PMM/tests/PMMImageUploadPerformance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/PMMHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/PMMHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PMM/tests/PMMPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PMM/tests/PMMPerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigFile/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigFile/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/baseClass/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/ProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PMM/sitePages/pmm/pages/ProjectsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,28 +29,34 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2bMpUrJrZLMY2e5v3DGLKyREfae" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PSabell/OneDrive - taylorcorp.com/Automation/PMM/PMM_Tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.PMM_Performance_Tests [clean].executor": "Run",
+    "Maven.PMM_Performance_Tests [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.PMMImageUplaodPerformance (2).executor": "Run",
+    "TestNG.PMMImageUploadPerformance (2).executor": "Run",
+    "TestNG.PMMPerformanceTest (1).executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Selenium Projects/PMM_Tests",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Selenium Projects\PMM_Performance_Tests\src\test\java" />
@@ -53,46 +64,105 @@
       <recent name="C:\Selenium Projects\PMM_Performance_Tests\ConfigFile" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="PMM.utilities" />
       <recent name="PMM.baseClass" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PMMPerformanceTest">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean:clean" />
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.PMMPerformanceTest (1)">
+    <configuration name="PMMImageUploadPerformance (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PMM_Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PMM.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PMM.tests" />
+      <option name="MAIN_CLASS_NAME" value="PMM.tests.PMMImageUploadPerformance" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PMMImageUploadPerformance (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PMM_Performance_Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PMM.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PMM.tests" />
+      <option name="MAIN_CLASS_NAME" value="PMM.tests.PMMImageUploadPerformance" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PMMImageUploadPerformance" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PMM_Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PMM.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PMM.tests" />
+      <option name="MAIN_CLASS_NAME" value="PMM.tests.PMMImageUploadPerformance" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PMMImageUploadPerformance" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PMM_Performance_Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PMM.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PMM.tests" />
+      <option name="MAIN_CLASS_NAME" value="PMM.tests.PMMImageUploadPerformance" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PMMImageUploadPerformance" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PMM_Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PMM.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PMM.tests" />
+      <option name="MAIN_CLASS_NAME" value="PMM.tests.PMMImageUploadPerformance" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PMMPerformanceTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PMM_Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PMM.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PMM.tests" />
-      <option name="MAIN_CLASS_NAME" value="PMM.tests.PMMPerformanceTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PMMPerformanceTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PMM_Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PMM.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PMM.tests" />
-      <option name="MAIN_CLASS_NAME" value="PMM.tests.PMMPerformanceTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PMMPerformanceTest (3)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PMM_Tests" />
+      <module name="PMM_Performance_Tests" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="PMM.tests.*" />
@@ -125,33 +195,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PMMPerformanceTest.verifySurveysTab" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PMM_Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PMM.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PMM.tests" />
-      <option name="MAIN_CLASS_NAME" value="PMM.tests.PMMPerformanceTest" />
-      <option name="METHOD_NAME" value="verifySurveysTab" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PMMPerformanceTest" />
-        <item itemvalue="TestNG.PMMPerformanceTest.verifySurveysTab" />
-        <item itemvalue="TestNG.PMMPerformanceTest (3)" />
-        <item itemvalue="TestNG.PMMPerformanceTest (2)" />
         <item itemvalue="TestNG.PMMPerformanceTest (1)" />
+        <item itemvalue="TestNG.PMMImageUploadPerformance (2)" />
+        <item itemvalue="TestNG.PMMImageUploadPerformance" />
+        <item itemvalue="TestNG.PMMImageUploadPerformance (1)" />
+        <item itemvalue="TestNG.PMMImageUploadPerformance" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -211,21 +270,7 @@
       <option name="project" value="LOCAL" />
       <updated>1707499051793</updated>
     </task>
-    <task id="LOCAL-00008" summary="Updated to latest version: selenium-java, testng, selenium-support, webdrivermanager">
-      <created>1708354790054</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1708354790054</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added WebDriverManager.chromedriver().clearDriverCache(); to TestBase">
-      <created>1708355393766</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1708355393766</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,9 +288,6 @@
     <MESSAGE value="1st Push" />
     <MESSAGE value="2nd Push" />
     <MESSAGE value="Added performance results for Projects page" />
-    <MESSAGE value="Updated to latest version: selenium-java, testng, selenium-support, webdrivermanager" />
-    <MESSAGE value="Added WebDriverManager.chromedriver().clearDriverCache(); to TestBase" />
-    <MESSAGE value="Added performance results for Surveys page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added performance results for Surveys page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added performance results for Projects page" />
   </component>
 </project>
