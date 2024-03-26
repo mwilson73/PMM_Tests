@@ -38,6 +38,18 @@ public class ProjectsPage extends TestBase {
     WebElement dmgNoButton;
     @FindBy(xpath = "//input[@class='checkbox ng-untouched ng-pristine ng-valid']")
     WebElement validateImagesCheck;
+    @FindBy(xpath = "//div[@class='modal fade projectTasksModal in show']//span[@class='name'][normalize-space()='Select date your kit arrived']")
+    WebElement projectModalTitle;
+    @FindBy(xpath = "//a[contains(@href,'#validateImage_0')]")
+    WebElement validateImage1;
+    @FindBy(xpath = "//a[contains(@href,'#validateImage_1')]")
+    WebElement validateImage2;
+    @FindBy(xpath = "//a[contains(@href,'#validateImage_2')]")
+    WebElement validateImage3;
+    @FindBy(xpath = "//a[contains(@href,'#validateImage_3')]")
+    WebElement validateImage4;
+    @FindBy(xpath = "//a[contains(@href,'#validateImage_4')]")
+    WebElement validateImage5;
 
 
 
@@ -75,13 +87,16 @@ public class ProjectsPage extends TestBase {
         functions.sendKeysUseEnter(startButton);
     }
 
-    public void clickProjectStart() {
+    public void clickProjectStart() throws InterruptedException {
+        Thread.sleep(2000);
+        functions.waitUntilElementIsVisible(startButton);
         functions.clickHiddenElement(startButton);
 
     }
 
     public void addCurrentDate() {
         getWebDriver().switchTo().activeElement();
+        functions.waitUntilElementIsVisible(projectModalTitle);
         //clears the date field
         JavascriptExecutor js = (JavascriptExecutor) getWebDriver();
         js.executeScript("arguments[0].value = '';", dateField);
@@ -97,15 +112,16 @@ public class ProjectsPage extends TestBase {
     }
 
     public void validateImages() throws InterruptedException {
-        Thread.sleep(1000);
+        getWebDriver().switchTo().activeElement();
+        functions.waitUntilElementIsVisible(validateImage1);
         functions.clickHiddenElement(validateImagesCheck);
-        Thread.sleep(1000);
+        functions.waitUntilElementIsVisible(validateImage2);
         functions.clickHiddenElement(validateImagesCheck);
-        Thread.sleep(1000);
+        functions.waitUntilElementIsVisible(validateImage3);
         functions.clickHiddenElement(validateImagesCheck);
-        Thread.sleep(1000);
+        functions.waitUntilElementIsVisible(validateImage4);
         functions.clickHiddenElement(validateImagesCheck);
-        Thread.sleep(1000);
+        functions.waitUntilElementIsVisible(validateImage5);
         functions.clickHiddenElement(validateImagesCheck);
         functions.clickHiddenElement(continueButton);
     }

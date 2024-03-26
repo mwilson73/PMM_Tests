@@ -37,6 +37,7 @@ public class PMMImageUploadPerformance extends TestBase {
         // Search for an existing project
         projectsPage.searchForProjects("Performance Test - 01");
         projectsPage.clickProjectStart();
+        Thread.sleep(2000);
         projectsPage.addCurrentDate();
         Thread.sleep(2000);
         projectsPage.selectDamagedOrMissing();

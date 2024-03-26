@@ -25,6 +25,16 @@ public class UploadImagesPage extends TestBase {
     WebElement pageTitle;
     @FindBy(xpath = "//div[@class='modal fade imageUploadPopupModal in show']//span[@class='ui-button-text ui-clickable'][normalize-space()='Upload']")
     WebElement uploadButton;
+    @FindBy(xpath = "//a[contains(@href,'#uploadImage_0')]")
+    WebElement validateImage1;
+    @FindBy(xpath = "//a[contains(@href,'#uploadImage_1')]")
+    WebElement validateImage2;
+    @FindBy(xpath = "//a[contains(@href,'#uploadImage_2')]")
+    WebElement validateImage3;
+    @FindBy(xpath = "//a[contains(@href,'#uploadImage_3')]")
+    WebElement validateImage4;
+    @FindBy(xpath = "//a[contains(@href,'#uploadImage_4')]")
+    WebElement validateImage5;
 
 
     public UploadImagesPage() {
@@ -37,6 +47,7 @@ public class UploadImagesPage extends TestBase {
         Thread.sleep(3000);
         getWebDriver().switchTo().activeElement();
         functions.waitUntilElementIsVisible(pageTitle);
+        functions.waitUntilElementIsVisible(validateImage1);
         functions.click(pageTitle);
         Thread.sleep(3000);
 
@@ -69,6 +80,7 @@ public class UploadImagesPage extends TestBase {
         Thread.sleep(3000);
         getWebDriver().switchTo().activeElement();
         functions.waitUntilElementIsVisible(pageTitle);
+        functions.waitUntilElementIsVisible(validateImage2);
         functions.click(pageTitle);
         Thread.sleep(3000);
 
@@ -97,6 +109,7 @@ public class UploadImagesPage extends TestBase {
         Thread.sleep(3000);
         getWebDriver().switchTo().activeElement();
         functions.waitUntilElementIsVisible(pageTitle);
+        functions.waitUntilElementIsVisible(validateImage3);
         functions.click(pageTitle);
         Thread.sleep(3000);
 
@@ -125,6 +138,7 @@ public class UploadImagesPage extends TestBase {
         Thread.sleep(3000);
         getWebDriver().switchTo().activeElement();
         functions.waitUntilElementIsVisible(pageTitle);
+        functions.waitUntilElementIsVisible(validateImage4);
         functions.click(pageTitle);
         Thread.sleep(3000);
 
@@ -153,6 +167,7 @@ public class UploadImagesPage extends TestBase {
         Thread.sleep(3000);
         getWebDriver().switchTo().activeElement();
         functions.waitUntilElementIsVisible(pageTitle);
+        functions.waitUntilElementIsVisible(validateImage5);
         functions.click(pageTitle);
         Thread.sleep(3000);
 
